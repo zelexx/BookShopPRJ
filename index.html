@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Книжная Гавань</title>
+    <link rel="stylesheet" href="CSS/index_html-css/style.css">
+    <link rel="stylesheet" href="CSS/index_html-css/product-card.css">
+    <link rel="stylesheet" href="CSS/index_html-css/header.css">
+    <link rel="stylesheet" href="CSS/index_html-css/footer.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__box">
+            <div class="header__top">
+                <p class="header__note">Доставка по всей России — от 2 дней</p>
+                <div class="header__contacts">
+                    <a class="header__phone" href="tel:+88005553535">
+                        <span class="header__phone-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4.5 4.5h3.6l1.8 4.6-2.2 1.4a12 12 0 0 0 6.3 6.3l1.4-2.2 4.6 1.8v3.6a1 1 0 0 1-1 1A16.5 16.5 0 0 1 3.5 5.5a1 1 0 0 1 1-1Z"/>
+                            </svg>
+                        </span>
+                        8 800 555 35 35
+                    </a>
+                    <span class="header__hours">Ежедневно с 9:00 до 21:00</span>
+                </div>
+            </div>
+
+            <a class="header__logo" href="index.html" aria-label="Книжная Гавань — на главную">
+                <img class="header__logo-image" src="Image/Logo.png" alt="Логотип «Книжная Гавань»">
+            </a>
+
+            <div class="header__content">
+                <nav class="header__nav" aria-label="Основная навигация">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item"><a class="header__nav-link header__nav-link--active" href="catalog.html" aria-current="page">Все книги</a></li>
+                        <li class="header__nav-item"><a class="header__nav-link" href="">Популярное</a></li>
+                        <li class="header__nav-item"><a class="header__nav-link" href="">Новинки</a></li>
+                        <li class="header__nav-item"><a class="header__nav-link" href="">Скоро в продаже</a></li>
+                        <li class="header__nav-item"><a class="header__nav-link" href="">Пользовательское соглашение</a></li>
+                        <li class="header__nav-item"><a class="header__nav-link" href="how-to-buy.html">Как купить</a></li>
+                        <li class="header__nav-item"><a class="header__nav-link" href="about-us.html">О нас</a></li>
+                        <li class="header__nav-item"><a class="header__nav-link" href="contacts.html">Контакты</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header__toolbar">
+                    <form class="header__search" role="search" action="catalog.html" method="get">
+                        <span class="header__search-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="7"/>
+                                <path d="m20 20-3.6-3.6"/>
+                            </svg>
+                        </span>
+                        <input class="header__search-input" type="search" name="q" placeholder="Автор, название или ISBN…" aria-label="Поиск по книгам">
+                        <button class="header__search-button" type="submit">Найти</button>
+                    </form>
+
+                    <nav class="header__menu" aria-label="Личный раздел">
+                        <ul class="header__menu-list">
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="catalog.html">
+                                    <span class="header__menu-icon" aria-hidden="true">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                            <rect x="3.5" y="3.5" width="7" height="7" rx="1.8"/>
+                                            <rect x="13.5" y="3.5" width="7" height="7" rx="1.8"/>
+                                            <rect x="3.5" y="13.5" width="7" height="7" rx="1.8"/>
+                                            <rect x="13.5" y="13.5" width="7" height="7" rx="1.8"/>
+                                        </svg>
+                                    </span>
+                                    Каталог
+                                </a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="order.html">
+                                    <span class="header__menu-icon" aria-hidden="true">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M6 3.5h12a1 1 0 0 1 1 1V21l-2.6-1.7L13.8 21 12 19.6 10.2 21 7.6 19.3 5 21V4.5a1 1 0 0 1 1-1Z"/>
+                                            <path d="M9 8.5h6M9 12.5h6"/>
+                                        </svg>
+                                    </span>
+                                    Заказы
+                                </a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="profile.html">
+                                    <span class="header__menu-icon" aria-hidden="true">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                            <circle cx="12" cy="8.5" r="3.7"/>
+                                            <path d="M4.5 20.5c0-3.9 3.4-6.2 7.5-6.2s7.5 2.3 7.5 6.2"/>
+                                        </svg>
+                                    </span>
+                                    Профиль
+                                </a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a class="header__menu-link header__menu-link--accent" href="basket.html">
+                                    <span class="header__menu-icon" aria-hidden="true">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                            <circle cx="9.5" cy="20" r="1.5"/>
+                                            <circle cx="18.5" cy="20" r="1.5"/>
+                                            <path d="M2.5 3.5h2.6l2.4 10.9a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.6l1.4-6.4H6.3"/>
+                                        </svg>
+                                    </span>
+                                    Корзина
+                                    <span class="header__menu-badge" title="Товаров в корзине">2</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="product-page">
+
+        <nav class="product-breadcrumbs" aria-label="Хлебные крошки">
+            <a href="index.html">Главная</a>
+            <span>/</span>
+            <a href="catalog.html">Каталог</a>
+            <span>/</span>
+            <a href="">Ужасы</a>
+            <span>/</span>
+            <span class="product-breadcrumbs-current">Оно</span>
+        </nav>
+
+        <article class="product-card">
+            <div class="product-media">
+                <div class="product-badges">
+                    <span class="product-badge product-badge-hit">Хит продаж</span>
+                    <span class="product-badge product-badge-sale">−20%</span>
+                </div>
+                <img class="product-image" src="Image/Книги/book1.jpg" alt="Обложка книги «Оно» Стивена Кинга">
+            </div>
+
+            <div class="product-info">
+                <h1 class="product-title">Оно</h1>
+                <p class="product-author">Стивен Кинг</p>
+
+                <div class="product-rating">
+                    <span class="product-rating-stars" aria-hidden="true">★★★★☆</span>
+                    <span class="product-rating-value">4,8</span>
+                    <a class="product-rating-reviews" href="">128 отзывов</a>
+                </div>
+
+                <p class="product-availability">Есть в наличии</p>
+
+                <div class="product-price">
+                    <span class="product-price-old">8 734,98 ₽</span>
+                    <span class="product-price-current">6 987,98 ₽</span>
+                </div>
+
+                <form class="product-actions" action="basket.html">
+                    <label class="product-qty">
+                        <span class="product-qty-label">Количество</span>
+                        <input class="product-qty-input" type="number" name="qty" min="1" max="10" value="1">
+                    </label>
+                    <button class="buy-button" type="submit">В корзину</button>
+                    <button class="product-button-secondary" type="button">Купить в 1 клик</button>
+                </form>
+
+                <dl class="product-specs">
+                    <div class="product-specs-row">
+                        <dt>Автор</dt>
+                        <dd>Стивен Кинг</dd>
+                    </div>
+                    <div class="product-specs-row">
+                        <dt>Издательство</dt>
+                        <dd>АСТ</dd>
+                    </div>
+                    <div class="product-specs-row">
+                        <dt>Серия</dt>
+                        <dd>Тёмная башня</dd>
+                    </div>
+                    <div class="product-specs-row">
+                        <dt>Год издания</dt>
+                        <dd>2024</dd>
+                    </div>
+                    <div class="product-specs-row">
+                        <dt>Страниц</dt>
+                        <dd>1 152</dd>
+                    </div>
+                    <div class="product-specs-row">
+                        <dt>Переплёт</dt>
+                        <dd>Твёрдый</dd>
+                    </div>
+                    <div class="product-specs-row">
+                        <dt>Формат</dt>
+                        <dd>60×90/16</dd>
+                    </div>
+                    <div class="product-specs-row">
+                        <dt>ISBN</dt>
+                        <dd>978-5-17-090364-1</dd>
+                    </div>
+                </dl>
+            </div>
+        </article>
+
+        <section class="product-description">
+            <h2>Описание</h2>
+            <p>
+                Дерри, штат Мэн. Семеро детей сталкиваются с тем, что живёт в городской канализации
+                и умеет принимать облик их самых сильных страхов. Спустя двадцать семь лет повзрослевшие
+                герои возвращаются в родной город, чтобы закончить то, что начали когда-то.
+            </p>
+            <p>
+                «Оно» — один из самых известных романов Стивена Кинга: история о дружбе, взрослении
+                и о том, что побеждённый страх возвращается, если о нём забыть.
+            </p>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__box">
+
+            <div class="footer__top">
+
+                <div class="footer__brand">
+                    <a class="footer__logo" href="index.html" aria-label="Книжная Гавань — на главную">
+                        <img class="footer__logo-image" src="Image/Logo.png" alt="Логотип «Книжная Гавань»">
+                    </a>
+                    <p class="footer__tagline">
+                        Книги, которые хочется возвращать на полку: подборки, новинки
+                        и любимые истории с доставкой по всей России.
+                    </p>
+                    <div class="footer__social">
+                        <a class="footer__social-link" href="" aria-label="Книжная Гавань во ВКонтакте">
+                            <img class="footer__social-icon" src="Image/vk.png" alt="ВКонтакте">
+                        </a>
+                        <a class="footer__social-link" href="" aria-label="Книжная Гавань в Telegram">
+                            <img class="footer__social-icon" src="Image/Telega.png" alt="Telegram">
+                        </a>
+                    </div>
+                </div>
+
+                <nav class="footer__nav" aria-label="Навигация в подвале">
+
+                    <div class="footer__column">
+                        <h3 class="footer__title">Покупателям</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item"><a class="footer__link" href="">Как сделать заказ</a></li>
+                            <li class="footer__item"><a class="footer__link" href="">Вопросы и ответы</a></li>
+                            <li class="footer__item"><a class="footer__link" href="">Оплата заказа</a></li>
+                            <li class="footer__item"><a class="footer__link" href="">Пользовательское соглашение</a></li>
+                            <li class="footer__item"><a class="footer__link" href="">Доставка</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__column">
+                        <h3 class="footer__title">Интересное</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item"><a class="footer__link" href="">Скоро в продаже</a></li>
+                            <li class="footer__item"><a class="footer__link" href="">Рецензии читателей</a></li>
+                            <li class="footer__item"><a class="footer__link" href="">Новинки</a></li>
+                            <li class="footer__item"><a class="footer__link" href="">Книжные наборы</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__column">
+                        <h3 class="footer__title">Каталог</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item"><a class="footer__link" href="">Все книги</a></li>
+                            <li class="footer__item"><a class="footer__link" href="">Популярное</a></li>
+                            <li class="footer__item"><a class="footer__link" href="">Подборки по жанрам</a></li>
+                        </ul>
+                    </div>
+
+                </nav>
+
+                <div class="footer__contacts">
+                    <h3 class="footer__title">Контакты</h3>
+                    <div class="footer__card">
+                        <p class="footer__contact">
+                            <span class="footer__contact-label">Телефон</span>
+                            <a class="footer__contact-value" href="tel:+88005553535">+8 800 555 35 35</a>
+                        </p>
+                        <p class="footer__contact">
+                            <span class="footer__contact-label">Почта</span>
+                            <a class="footer__contact-value" href="mailto:example@mail.com">example@mail.com</a>
+                        </p>
+                        <p class="footer__contact">
+                            <span class="footer__contact-label">Режим работы</span>
+                            <span class="footer__contact-value">Ежедневно с 9:00 до 21:00</span>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">© 2026 «Книжная Гавань». Все права защищены.</p>
+                <p class="footer__note">Доставка по всей России — от 2 дней</p>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>
